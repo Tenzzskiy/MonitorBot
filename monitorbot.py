@@ -50,7 +50,7 @@ def callback_inline(call):
         keyboard = types.InlineKeyboardMarkup(row_width=1)
         url_button = types.InlineKeyboardButton(text="Страница моего создателя в ВК", url="https://vk.com/psychocave")
         nextpage_button = types.InlineKeyboardButton(text="Перейти на следующую страницу", callback_data="next")
-        faq_button = types.InlineKeyboardButton(text="Часто задаваемые вопросы (FAQ)", callback_data="faq")
+        shops_button = types.InlineKeyboardButton(text="писок доступных магазинов", callback_data="shops")
         keyboard.add(shops_button, nextpage_button, url_button)
         bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
                      text="Добро пожаловать!👋 \nЯ Бот Монитор, ниже представлены команды, которые я могу выполнять 🤖",
